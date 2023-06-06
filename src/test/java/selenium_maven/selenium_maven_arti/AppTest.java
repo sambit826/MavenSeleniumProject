@@ -18,6 +18,7 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
     	WebDriver driver  = new ChromeDriver();
+    	System.out.println("Chrome browser launched");
     	driver.get("https://www.google.com");
         assertTrue( true );
     }
