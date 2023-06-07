@@ -1,8 +1,7 @@
 package selenium_maven.selenium_maven_arti;
 
-import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertTrue;
 
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,7 +13,7 @@ public class AppTest
     /**
      * Rigorous Test :-)
      */
-    @Test
+    @org.testng.annotations.Test
     public void shouldAnswerWithTrue()
     {
     	WebDriver driver  = new ChromeDriver();
