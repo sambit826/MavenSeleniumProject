@@ -46,6 +46,7 @@ public class BaseTest implements AutoConstant {
 			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 			driver.get(url);
 		}
+		basePage = new BasePage(driver);
 	}
 
 	@BeforeMethod
@@ -56,7 +57,7 @@ public class BaseTest implements AutoConstant {
 		}
 //    	driver = Utility.createDriver();
 
-//    	basePage = new BasePage(driver);
+    	
 //    	driver.get(url);
 	}
 
@@ -67,7 +68,7 @@ public class BaseTest implements AutoConstant {
 
 	@AfterClass
 	public void teardown() {
-//       driver.quit();
+       driver.close();
 	}
 
 	@AfterSuite

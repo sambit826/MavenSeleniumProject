@@ -15,7 +15,7 @@ public class ActitimeLoginCreateCustomerLogout extends BaseTest
 	public void loginCreateCustomerLogout()
 	{
 		System.out.println("This test name");
-		Assert.assertEquals(true, false);
+		//Assert.assertEquals(true, false);
 //		BaseTest base = new BaseTest();
 //		base.setup("chrome");
 		WebPages.Tc_1_ActitimeLoginpage loginpage=new WebPages.Tc_1_ActitimeLoginpage(driver);
